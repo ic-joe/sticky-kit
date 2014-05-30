@@ -181,7 +181,8 @@
       };
       win.on("touchmove", tick);
       win.on("scroll", tick);
-      win.on("resize", recalc_and_tick);
+      //win.on("resize", recalc_and_tick);
+      win.on("resize", tick);
       $(document.body).on("sticky_kit:recalc", recalc_and_tick);
       elm.on("sticky_kit:detach", detach);
       return setTimeout(tick, 0);
